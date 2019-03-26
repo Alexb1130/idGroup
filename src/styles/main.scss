@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import './core/normalize';
+@import './core/variables';
+@import './core/mixins';
+
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/grid';
+
+@import './blocks/header';
+@import './blocks/select';
+@import './blocks/icons';
+@import './blocks/social-list';
+@import './blocks/cart';
+@import './blocks/drawer';
+@import './blocks/form';
+@import './blocks/features';
+@import './blocks/item';
+
+@import './blocks/gallery';
+@import 'lightgallery.js/src/sass/lg-variables';
+@import 'lightgallery.js/src/sass/lg-fonts';
+@import 'lightgallery.js/src/sass/lightgallery';
+
+* {
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px $light-secondary;
+    }
+}
+
+body {
+    font-family: 'Gotham Pro', sans-serif;
+    color: $dark-primary;
+    background-color: $light-primary;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-primary;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.btn {
+    padding: 10px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}

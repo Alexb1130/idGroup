@@ -1,0 +1,14 @@
+extends ../templates/main
+
+block init
+    - let pageTitle = 'test task'
+
+block main
+    include ../blocks/drawer
+    include ../blocks/header
+
+    main
+        .main-content
+            include ../blocks/form
+            include ../blocks/features
+            include ../blocks/gallery

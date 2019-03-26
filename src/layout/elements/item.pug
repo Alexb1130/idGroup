@@ -1,0 +1,6 @@
+mixin item(title, text, position="1")
+    .item.features__item(class= `features__item--${position}`)&attributes(attributes)
+        .item__inner
+            .item__content
+                h3.item__title= title
+                p.item__text= text

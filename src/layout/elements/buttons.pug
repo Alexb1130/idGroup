@@ -1,0 +1,9 @@
+mixin button(text="button", type="btn-primary")
+    button.btn(class= type)&attributes(attributes)
+        span.button__label #{text}
+        block
+
+mixin link(text="link", url="#")
+    a.link(href= url)&attributes(attributes)
+        span.link__label #{text}
+        block

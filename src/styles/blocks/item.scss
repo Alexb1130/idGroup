@@ -1,0 +1,29 @@
+.item {
+    position: relative;
+    width: calc(100% / 2 - 4px);
+    flex-grow: 1;
+    min-height: 250px;
+    padding: 32px;
+    margin: 2px;
+    padding-left: 68px;
+    overflow: auto;
+    background-color: $light-primary;
+
+    @media (max-width: 708px) {
+        width: auto;
+    }
+
+    &__title {
+        color: #003351;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    
+    }
+    &__text {
+        color: #5e7188;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
